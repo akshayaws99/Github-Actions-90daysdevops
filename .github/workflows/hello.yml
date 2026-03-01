@@ -18,7 +18,7 @@
      # run : echo "Hello $USER"
 
 ---
-name: Hello
+name: hello
 on:
   push:
     branches:
@@ -30,5 +30,6 @@ greet:
     - name: say hello to users
       run: echo "Hello Dosto"
     - name: say hello to username
+      run: echo "Hello $USERNAME"
+    - name: say hello to username
       run: echo "Hello $USER"
-    
