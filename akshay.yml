@@ -1,0 +1,22 @@
+---
+Name: akshay
+age: 32
+gender: male
+location: hyderabad
+Dob: 23/01/1994
+tools:
+  - devops
+  - docker
+  - jenkins
+hobbies:
+  - teaching
+  - movies
+  - workout
+  - cricket
+experience: devops:[linux:2,docker:1,k8s=1]
+or
+experience:
+  - devops:
+      - linux:2
+      - docker:1
+      - k8s=1
