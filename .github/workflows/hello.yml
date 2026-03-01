@@ -18,12 +18,12 @@
      # run : echo "Hello $USER"
 
 ---
-name: hello
+name: Hello
 on:
   push:
     branches:
       - main
-jobs: null
+jobs:
 greet:
   runs-on: ubuntu-latest
   steps:
