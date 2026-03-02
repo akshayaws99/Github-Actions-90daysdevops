@@ -1,7 +1,19 @@
 
 name: CICD
 on:
-  workflow_dispatch: null
+  workflow_dispatch:
+    inputs:
+      environment:
+       description: This is the env value where this workflow runs
+       default: 'dev' 
+       required: true
+       type: choice
+       options:
+         - dev
+         - stage
+         - prod
+       
+      
 jobs:
   code:
     runs-on: ubuntu-latest
