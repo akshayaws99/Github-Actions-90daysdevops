@@ -35,7 +35,7 @@ jobs:
       - name: testing the code
         run: echo "Testing the code"
   deploy:
-    if: inputs.environment == 'dev'
+    if: ${{ inputs.environment == 'dev' || inputs.environment == 'stage' }}
     needs: [test]
     runs-on: ubuntu-latest
    
