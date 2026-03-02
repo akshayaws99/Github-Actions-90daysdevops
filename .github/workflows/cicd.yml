@@ -1,0 +1,36 @@
+#name of the workflow that will be displayed in the actions tab
+
+name: CICD
+
+# I want this workflow to be executed manually. hence using the keyword workflow_dispatch
+on:
+  workflow_dispatch: 
+#type of things I want to execute in this workflow
+
+jobs:
+  code:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: checkout code
+        run: echo "clone code from github"
+  build:
+    runs-on: ubuntu-latest
+  
+    steps:
+      - name: build docker container
+        run: echo "Docker container build" 
+  
+  test:
+   runs-on: ubuntu-latest
+
+   steps:
+     - name: testing the code
+       run: echo "Testing the code"
+       
+  deploy:
+   runs-on: ubuntu-latest
+
+   steps:
+     - name: deploying the app
+       run: echo " deploying the app"
