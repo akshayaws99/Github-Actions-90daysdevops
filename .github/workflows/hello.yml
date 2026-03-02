@@ -20,9 +20,10 @@
 ---
 name: Hello
 on:
-  push:
-    branches:
-      - main
+ workflow_dispatch: 
+  #push:
+   # branches:
+    #  - main
 jobs:
 #name of the job
  greet:
