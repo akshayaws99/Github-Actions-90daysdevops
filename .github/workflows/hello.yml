@@ -25,6 +25,7 @@ on:
 
     paths:
       - '**.html'
+      - '**.yml'
     
 jobs:
 #name of the job
