@@ -24,7 +24,9 @@ on:
     branches:
       - main
 jobs:
+#name of the job
  greet:
+ #type of runner .here it is github runner.each job runs on a runner
   runs-on: ubuntu-latest
   
   steps:
@@ -36,9 +38,15 @@ jobs:
       
     - name: say hello to username
       run: echo "Hello $USER"
+  #name of the second job   
+  
   showdetails:
+  #type of runner for second job
    runs-on: ubuntu-latest
 
    steps:
      - name: version of python
-       run: echo "python 3.2" 
+       run: docker --version && python --version
+
+
+ 
